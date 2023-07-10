@@ -1,5 +1,6 @@
 import React, { useCallback, useState } from "react";
 import { useNavigate } from "react-router-dom";
+
 const PatientProfile = () => {
   const [value, setValue] = useState();
 
@@ -14,44 +15,27 @@ const PatientProfile = () => {
   }, [navigate]);
 
   return (
-    //  <input value = {value} onChange = {e => setValue(e.target.value)} type='text' placeholder='Enter Room Code'/>
-    //  <button onClick={handleJoinRoom}>Join</button>
-    // <button onClick={handleJoinChatRoom}>Join ChatRoom</button>
-
     <div>
-      <form className="relative flex justify-center p-80">
-        <label htmlFor="simple-search" className="sr-only">
-          Searcb
-        </label>
-        <div className="relative">
-          <div className="absolute inset-y-0 left-0 flex items-center pl-10 pointer-events-none"></div>
-          <input
-            value={value}
-            onChange={(e) => setValue(e.target.value)}
-            type="text"
-            id="simple-search"
-            className=" text-black w-[140vh] rounded-lg dark:focus:ring-blue-500 dark:focus:border-blue-500"
-            placeholder="Enter Code/Link  "
-            required=""
-          />
+      <div className="w-full h-[620px] flex flex-col justify-evenly items-center bg-[#FFE6E2]">
+        <p className=" text-2xl not-italic font-bold leading-[normal] font-family: Poppins;">
+          Book Doctor
+        </p>
+        <div className=" w-[85%] h-[85%] rounded-xl flex justify-evenly items-center">
+          <div className=" w-[40%] h-[85%] bg-violet-1 rounded-xl flex flex-col justify-evenly items-center">
+            <img src="https://img.freepik.com/free-vector/videocalling-with-therapist-illustrated_23-2148515728.jpg?w=1380&t=st=1688981003~exp=1688981603~hmac=3008ec0b2fc8ef3f2da8501a7cc6bb2d115dea1be386adcc97e973c6e2c88ab1" alt=""  className=" w-[140px] h-[140px] bg-white rounded-full"/>
+            <div className=" w-[85%] h-[50%] bg-white rounded-xl">
+            <input value = {value} onChange = {e => setValue(e.target.value)} type='text' placeholder='Enter Room Code'/>
+        <button onClick={handleJoinRoom}>Join</button>
+            </div>
+          </div>
+          <div className=" w-[40%] h-[85%] bg-violet-1 rounded-xl flex flex-col justify-evenly items-center">
+            <img src="https://img.freepik.com/premium-vector/videocalling-with-therapist_23-2148517119.jpg?w=1380" alt=""  className=" w-[140px] h-[140px] bg-white rounded-full"/>
+            <div className=" w-[85%] h-[50%] bg-white rounded-xl">
+            <button onClick={handleJoinChatRoom}>Join ChatRoom</button>
+            </div>
+          </div>
         </div>
-
-        <button
-          onClick={handleJoinRoom}
-          type="submit"
-          placeholder="Join Video Call"
-          className=" p-2.5 h-42 w-30 ml-2 -top-8 relative  text-black bg-blue-700 rounded-lg border border-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-violet-600 dark:hover:bg-violet-700 dark:focus:ring-violet-800"
-        >
-          Video
-        </button>
-        <button
-          onClick={handleJoinChatRoom}
-          type="submit"
-          className="p-2.5 ml-2  relative flex top-0 text-white bg-blue-700 rounded-lg border border-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-violet-600 dark:hover:bg-violet-700 dark:focus:ring-violet-800"
-        >
-          Chat
-        </button>
-      </form>
+      </div>
     </div>
   );
 };
