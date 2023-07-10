@@ -9,12 +9,12 @@ import { useAuthState } from "react-firebase-hooks/auth";
 import { useCollectionData } from "react-firebase-hooks/firestore";
 
 firebase.initializeApp({
-  apiKey: "AIzaSyB1ViTlXY3Qjhwv9-8qQQXzezycObsdj9w",
-  authDomain: "healify-ecc09.firebaseapp.com",
-  projectId: "healify-ecc09",
-  storageBucket: "healify-ecc09.appspot.com",
-  messagingSenderId: "567107365240",
-  appId: "1:567107365240:web:b023e6e985ed2e009b808d",
+  apiKey: "AIzaSyAL676yxbaQFDiBbdb2qsHxaNbVxKMRGQ4",
+  authDomain: "medassist-6564b.firebaseapp.com",
+  projectId: "medassist-6564b",
+  storageBucket: "medassist-6564b.appspot.com",
+  messagingSenderId: "568738602944",
+  appId: "1:568738602944:web:1ed2e7b000fb57f495b225"
 });
 
 const auth = firebase.auth();

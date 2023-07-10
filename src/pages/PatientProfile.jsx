@@ -35,7 +35,7 @@ const PatientProfile = () => {
                 placeholder="Enter Room Code"
               />
               <button className=" bg-red-500" onClick={handleJoinRoom}>Join Video Call</button>
-              <button className=" bg-blue-500">Payment</button>
+              <a href="https://buy.stripe.com/test_aEU3ddgKlfdYeYMcMN"><button className=" bg-blue-500">Payment</button></a>
             </div>
           </div>
           <div className=" w-[40%] h-[85%] bg-violet-1 rounded-xl flex flex-col justify-evenly items-center">
@@ -46,7 +46,7 @@ const PatientProfile = () => {
             />
             <div className=" w-[85%] h-[50%] bg-white rounded-xl">
               <button className=" bg-red-500" onClick={handleJoinChatRoom}>Join Chat Room</button>
-              <button className=" bg-blue-500">Payment</button>
+              <a href="https://buy.stripe.com/test_5kAdRR51Dc1Mg2QaEG"><button className=" bg-blue-500">Payment</button></a>
             </div>
           </div>
         </div>
