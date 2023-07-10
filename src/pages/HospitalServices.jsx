@@ -1,9 +1,6 @@
-import { MapContainer, TileLayer, Marker, Popup } from "react-leaflet";
-import { Icon } from "leaflet";
+import Map from "./HospitalServices/Map";
 
 export default function HospitalServices() {
-  const position = [52.51, 13.38];
-
   return (
     <div>
       <h1 className="text-4xl p-4 w-[60%] font-Lato">
@@ -53,18 +50,9 @@ export default function HospitalServices() {
         </form>
       </div>
 
-      <div className="map" id="map">
-        <MapContainer center={position} zoom={6} scrollWheelZoom={true}>
-          <TileLayer
-            attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
-            url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
-          />
-          <Marker position={position}>
-            <Popup>???</Popup>
-          </Marker>
-        </MapContainer>
-        <div />
-      </div>
+      {/* Maps */}
+
+      <Map></Map>
     </div>
   );
 }
