@@ -35,7 +35,7 @@ function App() {
         <Header />
         <Routes>
           <Route path="/" element={<Home />}></Route>
-          <Route path="/TeleMedicine/*" element={<TeleMedicine />}></Route>
+          <Route path="/TeleMedicine" element={<TeleMedicine />}></Route>
           <Route
             path="/HospitalServices"
             element={<HospitalServices />}

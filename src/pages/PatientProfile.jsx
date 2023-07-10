@@ -27,15 +27,25 @@ const PatientProfile = () => {
               alt=""
               className=" w-[140px] h-[140px] bg-white rounded-full"
             />
-            <div className=" w-[85%] h-[50%] bg-white rounded-xl">
+            <div className=" w-[85%] h-[50%] bg-white flex flex-col justify-evenly m-auto rounded-xl border-none">
+              <a href="https://buy.stripe.com/test_aEU3ddgKlfdYeYMcMN">
+                <button className="w-[80%] px-4 py-2 text-xl text-white bg-blue-500 rounded-xl border-none transition ease-in-out">
+                  Payment
+                </button>
+              </a>
               <input
                 value={value}
                 onChange={(e) => setValue(e.target.value)}
                 type="text"
                 placeholder="Enter Room Code"
+                className="w-full px-4 py-2 text-xl text-gray-600 bg-white rounded-xl border-[1px] transition ease-in-out"
               />
-              <button className=" bg-red-500" onClick={handleJoinRoom}>Join Video Call</button>
-              <a href="https://buy.stripe.com/test_aEU3ddgKlfdYeYMcMN"><button className=" bg-blue-500">Payment</button></a>
+              <button
+                className="w-full px-4 py-2 text-xl text-white bg-blue-400 rounded-xl border-none transition ease-in-out"
+                onClick={handleJoinRoom}
+              >
+                Join Video Call
+              </button>
             </div>
           </div>
           <div className=" w-[40%] h-[85%] bg-violet-1 rounded-xl flex flex-col justify-evenly items-center">
@@ -45,8 +55,12 @@ const PatientProfile = () => {
               className=" w-[140px] h-[140px] bg-white rounded-full"
             />
             <div className=" w-[85%] h-[50%] bg-white rounded-xl">
-              <button className=" bg-red-500" onClick={handleJoinChatRoom}>Join Chat Room</button>
-              <a href="https://buy.stripe.com/test_5kAdRR51Dc1Mg2QaEG"><button className=" bg-blue-500">Payment</button></a>
+              <button className=" bg-red-500" onClick={handleJoinChatRoom}>
+                Join Chat Room
+              </button>
+              <a href="https://buy.stripe.com/test_5kAdRR51Dc1Mg2QaEG">
+                <button className=" bg-blue-500">Payment</button>
+              </a>
             </div>
           </div>
         </div>
