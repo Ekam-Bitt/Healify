@@ -12,9 +12,6 @@ export default function Card(props) {
     <div>
       <div className={classes}>
         <h1>{title}</h1>
-        <h2>{cause1}</h2>
-        <h2>{cause2}</h2>
-        <h2>{cause3}</h2>
       </div>
     </div>
   );
