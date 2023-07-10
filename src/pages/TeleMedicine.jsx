@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { useLocation, useNavigate } from "react-router-dom";
 import doc from "../assets/TeleMed_img.svg";
-import BookADoctor from "./TeleMed-Dashboard/BookDoctor";
+import BookADoctor from "./PatientProfile";
 import Visits from "./TeleMed-Dashboard/Visits";
 import Documents from "./TeleMed-Dashboard/Documents";
 import Messages from "./TeleMed-Dashboard/Messages";
