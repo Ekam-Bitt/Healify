@@ -1,7 +1,7 @@
 export default function Searchbar() {
   return (
     <div>
-      <form className="relative flex p-10">
+      <form className="relative flex left-{20px} pt-10">
         <label htmlFor="simple-search" className="sr-only">
           Search
         </label>
