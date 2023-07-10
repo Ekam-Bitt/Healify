@@ -19,7 +19,7 @@ export default function Home() {
       <div className="relative flex justify-between h-80">
         <Type></Type>
         <img
-          className="@apply relative flex-end w-[524px] h-[552px] shrink-0;"
+          className="@apply -top-3 relative flex-end w-[480px] h-[552px] shrink-0;"
           src={Nurse}
         ></img>
       </div>
@@ -62,7 +62,7 @@ export default function Home() {
                 type="text"
                 id="simple-search"
                 className="block w-[82vw] p-5 pl-4 text-sm text-gray-900 border border-gray-300 rounded-lg bg-slate-100 focus:ring-violet-50 focus:border-violet-50 dark:bg-slate-50 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
-                placeholder="Condition/Doctor/Procedure      |      City/State/Pin-Code   "
+                placeholder="Diseases |  Symptoms  |  Articles  "
                 required=""
               />
             </div>
