@@ -92,11 +92,11 @@ export default function Home() {
           </form>
         </div>
       </div>
-      <div className="flex h-[300px] ">
-        <ArticleCard pic={image}  className="w-[180px] h-[300px]"></ArticleCard>
-        <ArticleCard pic={image1}  className="w-[180px] h-[300px]"></ArticleCard>
-        <ArticleCard pic={image2}  className="w-[180px] h-[300px]"></ArticleCard>
-        <ArticleCard pic={image3}  className="w-[180px] h-[300px]"></ArticleCard>
+      <div className="relative justify-between inline-flex flex-row ml-[4.5rem] w-[80%]">
+        <ArticleCard pic={image}></ArticleCard>
+        <ArticleCard pic={image1}></ArticleCard>
+        <ArticleCard pic={image2}></ArticleCard>
+        <ArticleCard pic={image3}></ArticleCard>
       </div>
     </div>
   );
