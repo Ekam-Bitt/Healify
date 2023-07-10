@@ -19,7 +19,7 @@ export default function Home() {
       <div className="relative flex justify-between h-80">
         <Type></Type>
         <img
-          className="@apply relative flex-end w-[524px] h-[552px] shrink-0;"
+          className="@apply left-[220px] -top-3 relative flex-end w-[480px] h-[552px] shrink-0;"
           src={Nurse}
         ></img>
       </div>
@@ -48,7 +48,7 @@ export default function Home() {
       <div>
         {/* Symptoms and diseases */}
 
-        <div className="pl-10 font-bold text-8xl font-Lato">
+        <div className="pl-10 font-bold text-6xl font-Lato">
           Wanna read about diseases and their symptoms ?
         </div>
         <div>
@@ -62,7 +62,7 @@ export default function Home() {
                 type="text"
                 id="simple-search"
                 className="block w-[82vw] p-5 pl-4 text-sm text-gray-900 border border-gray-300 rounded-lg bg-slate-100 focus:ring-violet-50 focus:border-violet-50 dark:bg-slate-50 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
-                placeholder="Condition/Doctor/Procedure      |      City/State/Pin-Code   "
+                placeholder="Diseases |  Symptoms  |  Articles  "
                 required=""
               />
             </div>
@@ -92,11 +92,11 @@ export default function Home() {
           </form>
         </div>
       </div>
-      <div className="relative justify-between inline-flex flex-row ml-[4.5rem] w-[80%]">
-        <ArticleCard pic={image}></ArticleCard>
-        <ArticleCard pic={image1}></ArticleCard>
-        <ArticleCard pic={image2}></ArticleCard>
-        <ArticleCard pic={image3}></ArticleCard>
+      <div className="relative justify-between inline-flex flex-row ml-[4.5rem] w-[80%] ">
+        <ArticleCard pic={image} className="w-[180px] h-[300px]"></ArticleCard>
+        <ArticleCard pic={image1} className="w-[180px] h-[300px]"></ArticleCard>
+        <ArticleCard pic={image2} className="w-[180px] h-[300px]"></ArticleCard>
+        <ArticleCard pic={image3} className="w-[180px] h-[300px]"></ArticleCard>
       </div>
     </div>
   );

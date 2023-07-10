@@ -11,10 +11,10 @@ export default function Card(props) {
   return (
     <div>
       <div className={classes}>
-        <h1>{title}</h1>
-        <h2>{cause1}</h2>
-        <h2>{cause2}</h2>
-        <h2>{cause3}</h2>
+        <div className=" flex flex-col items-center">
+          <h1 className="text-center text-xl font-semibold py-4">{title}</h1>
+          <img src="https://img.freepik.com/free-vector/online-doctor-talking-patient_23-2148509191.jpg?w=1380&t=st=1688989272~exp=1688989872~hmac=0216e3b93c0fbcb4b15396e20fcc1749b5dc651455d1afa338b66cb75ab97e21"  className="w-[180px] h-[200px] bg-red-500 rounded-xl"></img>
+        </div>
       </div>
     </div>
   );
