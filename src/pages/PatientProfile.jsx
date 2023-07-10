@@ -22,16 +22,31 @@ const PatientProfile = () => {
         </p>
         <div className=" w-[85%] h-[85%] rounded-xl flex justify-evenly items-center">
           <div className=" w-[40%] h-[85%] bg-violet-1 rounded-xl flex flex-col justify-evenly items-center">
-            <img src="https://img.freepik.com/free-vector/videocalling-with-therapist-illustrated_23-2148515728.jpg?w=1380&t=st=1688981003~exp=1688981603~hmac=3008ec0b2fc8ef3f2da8501a7cc6bb2d115dea1be386adcc97e973c6e2c88ab1" alt=""  className=" w-[140px] h-[140px] bg-white rounded-full"/>
+            <img
+              src="https://img.freepik.com/free-vector/videocalling-with-therapist-illustrated_23-2148515728.jpg?w=1380&t=st=1688981003~exp=1688981603~hmac=3008ec0b2fc8ef3f2da8501a7cc6bb2d115dea1be386adcc97e973c6e2c88ab1"
+              alt=""
+              className=" w-[140px] h-[140px] bg-white rounded-full"
+            />
             <div className=" w-[85%] h-[50%] bg-white rounded-xl">
-            <input value = {value} onChange = {e => setValue(e.target.value)} type='text' placeholder='Enter Room Code'/>
-        <button onClick={handleJoinRoom}>Join</button>
+              <input
+                value={value}
+                onChange={(e) => setValue(e.target.value)}
+                type="text"
+                placeholder="Enter Room Code"
+              />
+              <button className=" bg-red-500" onClick={handleJoinRoom}>Join Video Call</button>
+              <button className=" bg-blue-500">Payment</button>
             </div>
           </div>
           <div className=" w-[40%] h-[85%] bg-violet-1 rounded-xl flex flex-col justify-evenly items-center">
-            <img src="https://img.freepik.com/premium-vector/videocalling-with-therapist_23-2148517119.jpg?w=1380" alt=""  className=" w-[140px] h-[140px] bg-white rounded-full"/>
+            <img
+              src="https://img.freepik.com/premium-vector/videocalling-with-therapist_23-2148517119.jpg?w=1380"
+              alt=""
+              className=" w-[140px] h-[140px] bg-white rounded-full"
+            />
             <div className=" w-[85%] h-[50%] bg-white rounded-xl">
-            <button onClick={handleJoinChatRoom}>Join ChatRoom</button>
+              <button className=" bg-red-500" onClick={handleJoinChatRoom}>Join Chat Room</button>
+              <button className=" bg-blue-500">Payment</button>
             </div>
           </div>
         </div>
